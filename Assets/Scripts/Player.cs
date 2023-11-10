@@ -1,22 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 
 public class Player : MonoBehaviour
 {
-
-
     public int score = 0;
-    private float movementSpeed = 2f;
-    private float rotationSpeed = 120f;
-
+    private float movementSpeed = 3f;
+    private float rotationSpeed = 150f;
 
     // Start is called before the first frame update
     void Start()
-    {
-
-    }
+    { }
 
     // Update is called once per frame
     void Update()
@@ -26,8 +18,5 @@ public class Player : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         transform.Translate(new Vector3(0, 0, verticalInput) * movementSpeed * Time.deltaTime);
         transform.Rotate(new Vector3(0, horizontalInput * rotationSpeed * Time.deltaTime, 0));
-        // transform.rotation = Quaternion.Euler(0, 0, 0);
-
-
     }
 }

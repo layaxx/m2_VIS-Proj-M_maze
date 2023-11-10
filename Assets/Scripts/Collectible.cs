@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Collectible : MonoBehaviour
@@ -21,7 +19,9 @@ public class Collectible : MonoBehaviour
     {
         // Increase Score of player
         player.score++;
+
+        Debug.Log("Good job, you collected " + name);
         // remove this collectible
-        Destroy(this);
+        Destroy(gameObject);
     }
 }
