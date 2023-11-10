@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "maze.sln"
+    "dotnet.defaultSolution": "maze.sln",
+    "dotnet.preferCSharpExtension": true
 }
