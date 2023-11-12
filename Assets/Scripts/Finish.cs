@@ -25,7 +25,10 @@ public class Finish : MonoBehaviour
             else
             {
                 Debug.Log("You have not yet collected all collectibles. Look in the corners of the maze.");
-                txt.text += "You need to collect all coins first. Look in the corners!";
+                if (txt.text.IndexOf("Look in the corners!") == -1)
+                {   // only append help text if not already present
+                    txt.text += "You need to collect all coins first. Look in the corners!";
+                }
             }
         }
     }

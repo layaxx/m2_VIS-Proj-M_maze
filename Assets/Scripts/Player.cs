@@ -4,7 +4,7 @@ public class Player : MonoBehaviour
 {
     public int score = 0;
     private readonly float movementSpeed = 3f;
-    private readonly float rotationSpeed = 150f;
+    private readonly float rotationSpeed = 180f;
 
     // Update is called once per frame
     void Update()
