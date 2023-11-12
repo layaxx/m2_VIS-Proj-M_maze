@@ -1,5 +1,4 @@
 using TMPro;
-using UnityEditor.Overlays;
 using UnityEngine;
 
 public class Collectible : MonoBehaviour
@@ -13,10 +12,6 @@ public class Collectible : MonoBehaviour
     {
         player = (Player)FindFirstObjectByType(typeof(Player));
     }
-
-    // Update is called once per frame
-    void Update()
-    { }
 
     private void OnTriggerEnter(Collider other)
     {
